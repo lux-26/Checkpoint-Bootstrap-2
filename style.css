@@ -1,0 +1,211 @@
+/* font link google font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  font-family: "Playfair Display", serif;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  max-height: 800px;
+  position: relative;
+  width: 100%;
+  background: url(assets/img/Hiro.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+header:hover {
+  filter: brightness(90%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  max-height: 350px;
+  max-width: 80%;
+  padding: 20px 20%;
+}
+
+/* barre de navigation */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  z-index: 1;
+}
+
+nav .menu ul {
+  margin-right: 20px;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+nav ul a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  padding: 0;
+  z-index: 1;
+}
+
+nav .logo h6 {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-weight: 300;
+  padding: 0;
+}
+
+/* hiro section */
+.header-section {
+  position: relative;
+  height: 700px;
+  padding-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-section .header-section-desc {
+  margin-top: 10%;
+  height: 150px;
+  z-index: 1;
+}
+
+.header-section .header-section-desc h1 {
+  font-size: 45px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 20px;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+.header-section .header-section-desc p {
+  color: #fff;
+  max-width: 350px;
+  padding-bottom: 30px;
+  font-size: 25px;
+}
+
+.header-section .header-section-desc button {
+  margin: 10px 0;
+  background-color: #4caf50;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+.header-section .header-section-desc button:hover {
+  border: 1px solid #4caf50;
+  background: transparent;
+  color: #fff;
+}
+
+.header-section .header-section-image {
+  position: absolute;
+  right: 0;
+  top: -160px;
+}
+
+.header-section .header-section-image img {
+  width: 860px;
+}
+
+/* produit */
+.produits {
+  padding: 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produits .produit {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.produits .produit:hover {
+  box-shadow: 0px 3px 12px 0px #00000042;
+}
+
+.produits .produit img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.produits .produit img:hover {
+  filter: brightness(80%);
+}
+
+.produit h3 {
+  font-size: 25px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.produit p {
+  font-size: 20px;
+  color: #7e7e7e;
+}
+
+.produit button {
+  margin: 10px 0;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.produit button:hover {
+  border: 1px solid #4caf50;
+  background: transparent;
+  color: #000;
+}
+
+/* footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.links a{
+  color: #d6d6d6;
+  font-size: 20px;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+/* responsive */
+@media screen and (max-width: 833px){
+  .menu{
+    display: none;
+  }
+}
