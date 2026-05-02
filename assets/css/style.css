@@ -13,7 +13,7 @@ header {
   max-height: 800px;
   position: relative;
   width: 100%;
-  background: url(assets/img/Hiro.jpg) no-repeat;
+  background: url(../img/Hiro.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
